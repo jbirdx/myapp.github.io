@@ -2,10 +2,24 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="./common/css/reset.css">
+<link rel="stylesheet" href="./common/css/common.css">
+<link rel="stylesheet" href="./css/jquery.yycountdown.css">
+
   <title>Hello World</title>
 </head>
 <body>
-<h1>My app</h1>   
+  <div id="olympicDate">
+   My app
+</div>
+<div id="timer"></div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.yycountdown.min.js"></script>
+<script type="text/javascript">
+  $("#timer").yycountdown({
+    endDateTime   : '2017/12/25 00:00:00'
+  });
+</script>
 <ul>
   <li><a href="https://itunes.apple.com/us/app/makeit0-暇な時間にちょっとした鬼畜計算ゲーム/id1218360149?l=ja&ls=1&mt=8">Makeit0</a></li>
   <li><a href="https://itunes.apple.com/jp/app/makeit0-version2-頭脳計算ゲーム/id1278351583?mt=8">makeit0-version2</a></li>
